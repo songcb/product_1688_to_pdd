@@ -3,8 +3,6 @@
 *.env
 !.env.example
 
-# ---- 反检测脚本（需自行下载，不随仓库分发） ----
-stealth.min.js
 
 # ---- Python ----
 __pycache__/
