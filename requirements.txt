@@ -1,0 +1,26 @@
+# ---- Web 自动化（所有脚本共用） ----
+selenium>=4.15,<5.0
+beautifulsoup4>=4.12
+requests>=2.31
+
+# ---- MySQL ----
+PyMySQL>=1.1.0
+
+# ---- .env 配置文件支持（可选，不装则直接使用系统环境变量） ----
+python-dotenv>=1.0.0
+
+# ---- Excel 读取（get_1688_img.py 的图片修复工具用到） ----
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# ---- Windows UI 自动化（wx_pdd_img_search.py / pdd_video_uploader.py，仅 Windows） ----
+pyautogui>=0.9.54; sys_platform == "win32"
+pyperclip>=1.8.2; sys_platform == "win32"
+uiautomation>=2.0.0; sys_platform == "win32"
+
+# ---- 图片相似度（wx_pdd_img_search.py） ----
+scikit-image>=0.21.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=10.0.0
+ImageHash>=4.3.1

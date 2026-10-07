@@ -1,0 +1,48 @@
+# ---- 敏感配置 ----
+.env
+*.env
+!.env.example
+
+# ---- 反检测脚本（需自行下载，不随仓库分发） ----
+stealth.min.js
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- 运行期数据（图片、视频、CSV、日志等，仅保留样例文件） ----
+data/*
+!data/.gitkeep
+!data/*.example.txt
+!data/*.example.csv
+
+# ---- 常见媒体与临时文件 ----
+*.log
+*.mp4
+*.avi
+*.mov
+*.zip
+*.xlsx
+*.xls
+!data/*.example.*
+
+# ---- IDE / 操作系统 ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
